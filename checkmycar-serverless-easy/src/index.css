@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --brand: 0 0% 0%; }
+.container { @apply max-w-6xl mx-auto px-4; }
+.card { @apply rounded-2xl bg-white shadow-sm border border-slate-200; }
+.card-header { @apply p-4 border-b border-slate-100; }
+.card-body { @apply p-4; }
+.btn { @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 active:scale-[0.99] transition; }
+.btn-primary { @apply bg-black text-white border-black hover:opacity-90; }
+.input, .textarea { @apply w-full px-3 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-black/20; }
+.label { @apply text-sm text-slate-600 mb-1 block; }
+.badge { @apply inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs; }
+.tab { @apply flex items-center gap-2 px-4 py-2 rounded-xl transition; }
+.tab-active { @apply bg-black text-white shadow; }
+.dropzone { @apply border-2 border-dashed rounded-2xl p-6 text-center bg-white; }
+.pill { @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs border; }
+.pill-ai { @apply border-emerald-600 text-emerald-700; }
+.pill-demo { @apply border-amber-600 text-amber-700; }
